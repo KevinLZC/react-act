@@ -5,7 +5,7 @@ import '../fonts/Geist/Geist-Regular.otf';
 
 const songs = [
   {
-    songImage: "./public/uranium-fever.jpeg",
+    songImage: "uranium-fever.jpeg",
     songName: 'Uranium Fever',
     artistName: 'Elton Britt',
     albumName: 'Uranium Rock - Fallout 4 Radio',
@@ -13,7 +13,7 @@ const songs = [
     listened: false
   },
   {
-    songImage: './public/atom-bomb-baby.jpeg',
+    songImage: 'atom-bomb-baby.jpeg',
     songName: "Atomb Bomb Baby",
     artistName: 'The Five Stars',
     albumName: "Atomb Bomb Baby",
@@ -21,7 +21,7 @@ const songs = [
     listened: true
   },
   {
-    songImage: './public/europa.jpeg',
+    songImage: 'europa.jpeg',
     songName: 'Europa',
     artistName: 'Santana',
     albumName: 'Amigos',
