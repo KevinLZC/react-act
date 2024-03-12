@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types'
+import './SongCard.css'
 
 export function Card(props) {
 
@@ -9,8 +10,8 @@ export function Card(props) {
       <img src={songImage} alt={songName} />
       <div className="card-details">
         <h1> {songName}</h1>
-        <p>Artist: {artistName}</p>
-        <p>Album: {albumName}</p>
+        <h2>Artist: {artistName}</h2>
+        <h3>Album: {albumName}</h3>
         <p>Release: {releaseDate}</p>
         {listened ? <p style={{ color: "green" }}>Listened</p> : <p style={{ color: "red" }}>Not Listened</p>}
       </div>

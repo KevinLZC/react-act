@@ -1,11 +1,11 @@
 import { useState } from 'react'
 import './App.css'
-import { Card } from './Card'
+import { Card } from './SongCard/SongCard'
 import '../fonts/Geist/Geist-Regular.otf';
 
 const songs = [
   {
-    songImage: 'https://i.scdn.co/image/ab67616d0000b273d13ca3ed0b13d9038667a536',
+    songImage: "./public/uranium-fever.jpeg",
     songName: 'Uranium Fever',
     artistName: 'Elton Britt',
     albumName: 'Uranium Rock - Fallout 4 Radio',
@@ -13,7 +13,7 @@ const songs = [
     listened: false
   },
   {
-    songImage: 'https://i.scdn.co/image/ab67616d0000b2732c81905d4a216deda92d91ae',
+    songImage: './public/atom-bomb-baby.jpeg',
     songName: "Atomb Bomb Baby",
     artistName: 'The Five Stars',
     albumName: "Atomb Bomb Baby",
@@ -21,7 +21,7 @@ const songs = [
     listened: true
   },
   {
-    songImage: 'https://i.scdn.co/image/ab6761610000e5eb09882b1b7b33732abd60fc38',
+    songImage: './public/europa.jpeg',
     songName: 'Europa',
     artistName: 'Santana',
     albumName: 'Amigos',
@@ -33,7 +33,7 @@ const songs = [
 function App() {
   const [showListened, setShowListened] = useState(false)
 
-  const filteredSongs = showListened ? songs.filter(song => !song.listened) : songs
+  const filteredSongs = showListened ? songs.filter(song => song.listened) : songs
 
   return (
     <>

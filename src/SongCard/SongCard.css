@@ -1,0 +1,83 @@
+.checkbox {
+  margin: 30px;
+  font-size: 30px;
+}
+
+.checkbox input[type="checkbox"] {
+  transform: scale(2);
+  margin: 20px;
+}
+
+img {
+  max-width: 50%;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.card {
+  display: flex;
+  border: 1px solid transparent;
+  overflow: hidden;
+  margin-bottom: 30px;
+  border-radius: 20px;
+}
+
+.card img {
+  max-width: 200px;
+  z-index: 1;
+}
+
+
+.card-details {
+  flex: 1;
+  background-color: #e3e3e3;
+  color: black;
+  text-align: left;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 300px;
+}
+
+.card-details h1 {
+  margin: 0;
+  font-size: 2.5em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  animation: none;
+}
+
+@keyframes marqueeEffect {
+  from {
+    transform: translateX(0%);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.card-details h1:hover {
+  overflow: visible;
+  animation: marqueeEffect 5s linear infinite;
+}
+
+.card-details h2,
+h3,
+p {
+  margin: 0;
+}
+
+.card-details h2,
+h3 {
+  font-size: 1.2em;
+}
+
+.card-details p:last-child {
+  font-style: italic;
+}
